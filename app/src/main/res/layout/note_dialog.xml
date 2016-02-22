@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/note_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note Title"
+        app:met_primaryColor="#61E24C"
+        app:met_errorColor="#ff0000"
+        app:met_maxCharacters="15"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/note_dialog_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Details here.."
+        app:met_primaryColor="#61E24C"
+        app:met_errorColor="#ff0000"
+        app:met_maxCharacters="300"/>
+
+</LinearLayout>

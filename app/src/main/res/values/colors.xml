@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#61E24C</color>
+    <color name="colorPrimaryDark">#3DD022</color>
+    <color name="colorAccent">#61E24C</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="white">#FFF</color>
+    <!--Kentoy-->
+    <color name="title_gray">#434343</color>
+    <color name="bg_msg_input">#e8e8e8</color>
+    <color name="text_msg_input">#626262</color>
+    <color name="lblFromName">#777777</color>
+    <color name="bg_msg_you">#5eb964</color>
+    <color name="bg_msg_from">#e5e7eb</color>
+</resources>

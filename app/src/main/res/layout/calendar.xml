@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:mcv_showOtherDates="true"
+        app:mcv_arrowColor="#61E24C"
+        app:mcv_selectionColor="#61E24C"
+        app:mcv_headerTextAppearance="?android:attr/textAppearanceLarge"
+        app:mcv_dateTextAppearance="?android:attr/textAppearanceSmall"
+        app:mcv_weekDayTextAppearance="?android:attr/textAppearanceSmall"
+        app:mcv_weekDayLabels="@array/days"
+        app:mcv_monthLabels="@array/months"
+        app:mcv_tileSize="35dp"
+        app:mcv_firstDayOfWeek="sunday" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/note_edit_delete"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/note_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_edit"
+                    android:layout_marginRight="5dp"/>
+                <ImageView
+                    android:id="@+id/note_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_delete"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/add_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_input_add"
+                android:layout_gravity="end"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/sched_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Title"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/sched_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Schedule Details"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:visibility="invisible"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

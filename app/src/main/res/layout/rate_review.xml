@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    card_view:contentPadding="10dp"
+    android:layout_marginTop="5dp"
+    android:elevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Rate and Review"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/rate_review"/>
+
+        <TextView
+            android:id="@+id/rate_rev_tourName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sanova Beach"
+            android:textStyle="italic"
+            android:textColor="#07c"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/rate_rev_guideName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="marvz opo"
+            android:textStyle="italic"
+            android:textColor="#07c"
+            android:textSize="15dp"/>
+
+        <RatingBar
+            android:id="@+id/rate_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/review_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="top"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:hint="Write a review..."
+            android:inputType="textMultiLine"/>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
